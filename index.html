@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remont4u - Newsletter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/background-logo.png') }}" alt="Logo" class="logo">
+            </div>
+            <h1>Zapisz się do naszego newslettera!</h1>
+            <p>Otrzymuj najnowsze informacje i oferty bezpośrednio na swój e-mail.</p>
+        </header>
+        <main>
+            <form action="/" method="POST" class="newsletter-form">
+                <input type="email" name="email" placeholder="Wpisz swój e-mail" required>
+                <button type="submit">Zapisz się</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
